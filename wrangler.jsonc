@@ -1,0 +1,6 @@
+{
+  "$schema": "https://workers.cloudflare.com/schema/wrangler.json",
+  "name": "flue-cloudflare-agent",
+  "compatibility_date": "2026-05-02",
+  "compatibility_flags": ["nodejs_compat"]
+}
