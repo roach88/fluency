@@ -1,0 +1,13 @@
+{
+  // Add this to the root wrangler.jsonc after R2 is enabled for the account
+  // and the bucket has been created:
+  //
+  //   npx wrangler r2 bucket create fluency-knowledge-base
+  //
+  "r2_buckets": [
+    {
+      "binding": "KNOWLEDGE_BASE",
+      "bucket_name": "fluency-knowledge-base"
+    }
+  ]
+}

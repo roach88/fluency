@@ -1,0 +1,27 @@
+{
+  // Merge these fields into root wrangler.jsonc to enable Cloudflare Sandbox.
+  // Flue will merge this user-owned config with its generated Worker entry,
+  // agent Durable Object bindings, and migrations.
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "Sandbox",
+        "name": "Sandbox"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["Sandbox"]
+    }
+  ],
+  "containers": [
+    {
+      "class_name": "Sandbox",
+      "image": "./examples/official-flue-patterns/cloudflare-sandbox/Dockerfile",
+      "instance_type": "lite",
+      "max_instances": 1
+    }
+  ]
+}
