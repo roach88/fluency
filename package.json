@@ -12,7 +12,10 @@
     "flue:help": "flue --help",
     "cf:whoami": "wrangler whoami",
     "cf:r2:list": "wrangler r2 bucket list",
-    "sandbox:check": "node -e \"console.log('@cloudflare/sandbox', require('./node_modules/@cloudflare/sandbox/package.json').version)\" && docker info >/dev/null"
+    "sandbox:check": "node -e \"console.log('@cloudflare/sandbox', require('./node_modules/@cloudflare/sandbox/package.json').version)\" && docker info >/dev/null",
+    "kb:seed": "./scripts/seed-kb.sh",
+    "kb:test": "curl http://localhost:3583/agents/support/kb-test-$(date +%s) -H \"Content-Type: application/json\" -d '{\"message\":\"What services does this Fluency agent use?\"}'",
+    "kb:get-overview": "wrangler r2 object get fluency-knowledge-base/flue-cloudflare-overview.md --remote --pipe"
   },
   "dependencies": {
     "@cloudflare/sandbox": "^0.9.2",
