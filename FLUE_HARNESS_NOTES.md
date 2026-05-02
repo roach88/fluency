@@ -2,12 +2,6 @@
 
 These notes explain how this Flue agent project is structured, how the harness works, and where to add new behavior.
 
-Project root:
-
-```text
-/Users/tyler/dev/agents/flue-cloudflare-agent
-```
-
 Current important files:
 
 ```text
