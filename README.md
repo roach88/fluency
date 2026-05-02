@@ -2,6 +2,12 @@
 
 A minimal Flue agent that runs on Cloudflare Workers and uses Cloudflare Workers AI.
 
+## Links
+
+- Flue website: https://flueframework.com/
+- Flue launch post on X: https://x.com/FredKSchott/status/2050274923852210397
+- Flue GitHub repository: https://github.com/withastro/flue
+
 ## Stack
 
 - Flue root workspace layout: `agents/` and `roles/`
